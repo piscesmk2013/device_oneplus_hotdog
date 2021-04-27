@@ -21,4 +21,6 @@
          timing(the duration which the vibrator is expected to vibrate for). -->
     <bool name="config_hasOnePlusHapticMotor">true</bool>
 
+    <!-- Face unlock -->
+    <bool name="config_faceAuthOnlyOnSecurityView">true</bool>
 </resources>
