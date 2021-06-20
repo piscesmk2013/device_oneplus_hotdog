@@ -46,7 +46,10 @@ PRODUCT_PACKAGES += \
     OnePlus7TProWifiOverlay
 
 PRODUCT_PROPERTY_OVERRIDES  += \
-    vendor.product.device=hotdog
+    vendor.product.device=hotdog \
+    ro.product.product.model=HD1910 \
+    ro.product.system.model=HD1910 \
+    ro.build.product=OnePlus7TPro
 
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_SHIPPING_API_LEVEL := 29
