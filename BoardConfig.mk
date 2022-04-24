@@ -37,6 +37,9 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 # Compression
 PRODUCT_FS_COMPRESSION := 1
 
+# Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
