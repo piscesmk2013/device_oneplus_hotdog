@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2024 The PixelOS AOSP
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,14 +12,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from hotdog device
 $(call inherit-product, device/oneplus/hotdog/device.mk)
 
-# Inherit some common YAAP stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+# Inherit some common aosp stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := yaap_hotdog
+PRODUCT_NAME := aosp_hotdog
 PRODUCT_DEVICE := hotdog
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := HD1917
+PRODUCT_MODEL := HD1910
 PRODUCT_MANUFACTURER := OnePlus
 
 PRODUCT_SYSTEM_NAME := OnePlus7TPro
@@ -29,9 +30,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Boot animation
-scr_resolution := 1440
 TARGET_SCREEN_HEIGHT := 3120
 TARGET_SCREEN_WIDTH := 1440
+TARGET_BOOT_ANIMATION_RES := 1440
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \

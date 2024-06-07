@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2024 The PixelOS AOSP
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,7 +12,7 @@ $(call inherit-product, vendor/oneplus/hotdog/hotdog-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-yaap
+    $(LOCAL_PATH)/overlay-aosp
 
 # Audio
 PRODUCT_COPY_FILES += \
